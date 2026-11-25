@@ -1,0 +1,31 @@
+NEXUS NETWORK SECURITY - START HERE
+
+1. Extract this ZIP folder.
+2. Open the extracted "nexus_network_security" folder in VS Code:
+   File > Open Folder
+3. Install Node.js and Python if they are not already installed.
+
+FRONTEND:
+   Open a VS Code terminal:
+   cd frontend
+   npm install
+   npm run dev
+   Open http://localhost:5173
+
+BACKEND:
+   Open a SECOND VS Code terminal:
+   cd backend
+   python -m venv venv
+   .\venv\Scripts\Activate.ps1
+   pip install -r requirements.txt
+   uvicorn main:app --reload --port 8000
+
+If PowerShell blocks virtual environment activation, use Command Prompt and:
+   venv\\Scripts\\activate.bat
+
+Backend docs: http://localhost:8000/docs
+
+IMPORTANT:
+The dashboard initially contains illustrative sample values. We will connect
+the UNSW-NB15 dataset, train the Random Forest classifier, and add the remaining
+module functions step by step.
